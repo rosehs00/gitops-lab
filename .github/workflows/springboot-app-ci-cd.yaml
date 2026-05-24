@@ -55,8 +55,8 @@ jobs:
           file: ./springboot-app/hello/Dockerfile # 이미지 빌드에 사용할 Dockerfile
           push: true # 이미지 빌드 후 도커 허브에 푸시
           tags: | # 이미지 태그 (SHA: 고유 식별자, latest: 최신)
-            rosehs00/hello-app:${{ steps.vars.outputs.sha }}  
-            rosehs00/hello-app:latest
+            docker.io/rosehs00/hello-app:${{ steps.vars.outputs.sha }}  
+            docker.io/rosehs00/hello-app:latest
 
       # 7. Kustomize 설치
       #    Kubernetes 매니페스트 관리를 위해 설치
