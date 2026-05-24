@@ -3,9 +3,9 @@ kind: Kustomization
 
 # Kustomization이 관리할 리소스 목록을 정의
 resources:
-  - hello-app-namespace.yaml
-  - hello-app-deployment.yaml
-  - hello-app-service.yaml
+- hello-app-namespace.yaml
+- hello-app-deployment.yaml
+- hello-app-service.yaml
 images:
   - name: docker.io/rosehs00/hello-app
     newName: docker.io/rosehs00/hello-app
