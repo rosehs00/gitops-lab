@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/myanjini/gitops-lab.git		⇐ 본인의 깃허브 주소로 변경
-    path: /
+    repoURL: https://github.com/rosehs00/gitops-lab.git
+    path: .
     targetRevision: main
   destination:
     namespace: bgd
